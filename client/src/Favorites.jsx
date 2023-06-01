@@ -8,7 +8,7 @@ const Favorites = () => {
 
   const [recipes, setRecipes] = useState([])
   const [savedRecipes, setSavedRecipes] = useState([])
-  const [cookies, _] = useCookies(["access_token"])
+  const [cookies] = useCookies(["access_token"])
 
   const userID = useGetUserID()
 

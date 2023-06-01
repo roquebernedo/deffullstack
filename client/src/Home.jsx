@@ -2,14 +2,14 @@ import "./Styles/Home.scss"
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import { useGetUserID } from './Hooks/useGetUserID'
-import { useCookies } from 'react-cookie'
+
 
 
 const Home = () => {
 
     const [recipes, setRecipes] = useState([])
-    const [savedRecipes, setSavedRecipes] = useState([])
-    const [cookies, _] = useCookies(["access_token"])
+    const [ setSavedRecipes] = useState([])
+    
   
     const userID = useGetUserID()
   
@@ -35,7 +35,7 @@ const Home = () => {
   
       fetchRecipe()
       fetchSavedRecipe()
-    }, [userID])
+    }, [userID, setSavedRecipes])
   
     
   
