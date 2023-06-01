@@ -34,7 +34,7 @@ const Favorites = () => {
 
     fetchRecipe()
     fetchSavedRecipe()
-  }, [])
+  }, [userID])
 
   
 

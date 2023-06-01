@@ -1,7 +1,6 @@
 import './App.css';
 import Entrance from './Entrance';
-import { createBrowserRouter, RouterProvider, Router, Routes, Route, Outlet } from 'react-router-dom';
-import Save from './Save';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Navbar from './Navbar/Navbar.jsx';
 import Home from './Home';
 import Favorites from './Favorites';

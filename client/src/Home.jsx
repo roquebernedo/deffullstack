@@ -35,22 +35,22 @@ const Home = () => {
   
       fetchRecipe()
       fetchSavedRecipe()
-    }, [])
+    }, [userID])
   
     
   
-    const saveRecipe = async (recipeID) => {
-      try{
-        const response = await axios.put("http://localhost:3001/recipes", { 
-          recipeID, userID}, 
-          { headers: { authorization : cookies.access_token}})
-        setSavedRecipes(response.data.savedRecipes)
-      }catch(err){
-        console.error(err)
-      }
-    }
+    // const saveRecipe = async (recipeID) => {
+    //   try{
+    //     const response = await axios.put("http://localhost:3001/recipes", { 
+    //       recipeID, userID}, 
+    //       { headers: { authorization : cookies.access_token}})
+    //     setSavedRecipes(response.data.savedRecipes)
+    //   }catch(err){
+    //     console.error(err)
+    //   }
+    // }
   
-    const isRecipeSaved = (id) => savedRecipes.includes(id) 
+    // const isRecipeSaved = (id) => savedRecipes.includes(id) 
 
   return (
     <div className='main-home'>

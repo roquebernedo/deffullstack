@@ -24,7 +24,7 @@ const SavedRecipes = () => {
 
     
     fetchSavedRecipe()
-  }, [])
+  }, [userID])
 
 
   return (
