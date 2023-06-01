@@ -1,0 +1,82 @@
+.recipes-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+
+    .looking{
+        color: #3d3b3b;
+        align-items: center;
+        text-align: center;
+    }
+
+    .recipes-list{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+            
+            li{
+                display: flex;
+                flex-direction: row;
+               
+                margin-left: 11px;
+                margin-right: 11px;
+                padding-top: 10px;
+                padding-right: 18px;
+                margin-bottom: 21px;
+
+                .recipes{
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    text-align: center;
+                    align-items: center;
+
+                    .name-recipe{
+                        position: absolute;
+                        top: 5%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 17px;
+                        z-index: 1;
+                        color: white;
+                        font-weight: 800;
+                        display: flex;
+                        background-color: rgb(196, 114, 82);
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        border-radius: 10px;
+                        padding: 3px;
+                        padding-right: 5px;
+                        padding-left: 5px;
+                    }
+
+                    .img-recipe{
+                        height: 350px;
+                        width: 235px;
+                        border-radius: 15px;
+                    }
+
+                    .button-recipefood{
+                        text-decoration: none;
+                        color: rgb(101, 120, 121);
+                        width: 70px;
+                        padding: 8px 8px;
+                        border: 1px solid;
+                        border-radius: 20px;
+                        font-weight: 800;
+                        color: white;
+                        background-color: rgb(187, 59, 20);
+                        margin-bottom: 80px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        margin-top: 15px;
+                    }
+                }
+            }
+    }
+}

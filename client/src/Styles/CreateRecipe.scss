@@ -1,0 +1,151 @@
+.create-recipe{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+
+    .create-title{
+        text-align: center;
+    }
+
+    .create-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        text-align: center;
+        margin: auto;
+
+        .create-name{
+            display: flex;
+            justify-content: flex-start;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .create-input{
+            height: 30px;
+            width: 597px;
+            border-radius: 10px;
+            border: 1px solid rgb(173, 179, 179);
+            margin-bottom: 18px;
+        }
+
+        .create-input::placeholder{
+            padding-left: 10px;
+            font-size: 15px;
+            align-items: center;
+            color: rgb(145, 142, 142);
+        }
+
+        .create-ingre{
+            display: flex;
+            justify-content: flex-start;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .create-button{
+            height: 30px;
+            width: 605px;
+            border-radius: 10px;
+            border: 1px solid rgb(173, 179, 179);
+            margin-bottom: 18px;
+        }
+
+        .create-inst{
+            display: flex;
+            justify-content: flex-start;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .create-textarea{
+            height: 30px;
+            width: 600px;
+            border-radius: 10px;
+            border: 1px solid rgb(173, 179, 179);
+            margin-bottom: 18px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .create-textarea::placeholder{
+            padding-left: 10px;
+            font-size: 15px;
+            align-items: center;
+            padding-top: 5px;
+            color: rgb(116, 112, 112);
+        }
+
+        .create-img{
+            display: flex;
+            justify-content: flex-start;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .create-inputurl{
+            height: 30px;
+            width: 600px;
+            border-radius: 10px;
+            border: 1px solid rgb(173, 179, 179);
+            margin-bottom: 18px;
+        }
+
+        .create-inputurl::placeholder{
+            padding-left: 10px;
+            font-size: 15px;
+            align-items: center;
+            color: rgb(145, 142, 142);
+        }
+
+        .create-cook{
+            display: flex;
+            justify-content: flex-start;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .create-cooktime{
+            height: 30px;
+            width: 600px;
+            border-radius: 10px;
+            border: 1px solid rgb(173, 179, 179);
+            margin-bottom: 18px;
+        }
+
+        .create-cooktime::placeholder{
+            padding-left: 10px;
+            font-size: 15px;
+            align-items: center;
+            color: rgb(145, 142, 142);
+        }
+
+        .button-createrecipe{
+            height: 45px;
+            width: 150px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+            padding: 8px 8px;
+            border-radius: 20px;
+            font-weight: 800;
+            color: white;
+            background-color: rgb(187, 59, 20);
+            border: 1px solid;
+            font-size: 15px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .create-add{
+            height: 30px;
+            width: 600px;
+            border-radius: 10px;
+            border: 1px solid rgb(173, 179, 179);
+            margin-bottom: 10px;
+            
+        }
+    }
+}

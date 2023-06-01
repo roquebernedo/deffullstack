@@ -1,0 +1,129 @@
+.main-square{
+    background-color: #F9E37E;
+    height: 1578px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+
+    .top-side{
+        display: flex;
+        flex-direction: row;
+        height: 789px;
+
+        .right-side{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+    
+            .img-left{
+    
+                width: 50%;
+    
+                .lomosaltado{
+                    width: 275px;
+                    height: 275px;
+                    border-radius: 50px;
+                }
+            }
+            
+            .img-right{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                height: 600px;
+    
+                .polloalabrasa{
+                    display: flex;
+                    justify-content: flex-start;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50px;
+                    margin-bottom: 10px;
+                }
+    
+                .redire{
+                    display: flex;
+                    height: 200px;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    font-size: 22px;
+                    font-weight: 500;
+    
+                    .amazonico{
+                        display: flex;
+                        justify-content: center;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50px;
+                        margin-bottom: 10px;
+                    }
+                }
+    
+                .cont-ceviche{
+                    display: flex;
+                    justify-content: flex-end;
+                    .ceviche{
+                        display: flex;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50px;
+                    }
+                }
+                
+            }
+    
+        }
+    
+        .left-side{
+    
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+    
+            .container{
+                display: flex;
+                flex-direction: column;
+                width: 600px;
+                align-items: center;
+                color: #B64518;
+                
+    
+                .minititle{
+                    font-size: 60px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                    width: 600px;
+                }
+    
+                .info{
+                    font-size: 25px;
+                    display: flex;
+                    text-align: center;
+                    font-weight: 300;
+                    align-items: center;
+                    width: 375px;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
+    
+                .explore{
+                    font-size: 15px;
+                    width: 70px;
+                    background-color: #B64518;
+                    color: #F9E37E;
+                    text-decoration: none;
+                    padding: 5px;
+                    border-radius: 5px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    
+}

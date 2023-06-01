@@ -1,0 +1,109 @@
+.auth-container{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 60px;
+        margin-top: 30px;
+        
+        box-shadow: 1px 1px 2px 2px #afacac;
+
+        .sign{
+            display: flex;
+            justify-content: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            
+            label{
+                padding-bottom: 10px;
+            }
+
+            input{
+                height: 30px;
+                width: 350px;
+                padding-bottom: 10px;
+                border-radius: 10px;
+                border: 1px solid rgb(173, 179, 179);
+                margin-bottom: 12px;
+                font-size: 14px;
+            }
+        }
+
+        .submit-main{
+            height: 45px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 1px solid rgb(173, 179, 179);
+            color: #474545;
+        }
+
+        .dont{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 3px;
+
+            p{
+                font-size: 13px;
+                color: rgb(7, 18, 48);
+            }
+
+            .here{
+                font-size: 13px;
+                color: rgb(75, 75, 148);
+            }
+        }
+
+        .or{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            
+
+            .or{
+                margin-left: 15px;
+                margin-right: 15px;
+                font-size: 13px;
+                color: rgb(139, 135, 135);
+            }
+
+            .space{
+                padding-top: 6px;
+                height: 20px;
+                color: #afacac;
+            }
+        }
+
+        .log{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 45px;
+            margin-bottom: 4px;
+            border-radius: 10px;
+            border: 1px solid rgb(173, 179, 179);
+            padding-left: 95px;
+            color: #474545;
+
+            .icon-google{
+                width: 35px;
+                height: 25px;
+            }
+
+            .face{
+                color: dodgerblue;
+            }
+
+            .git{
+                color: darkslategray;
+            }
+        }
+    }
+}
