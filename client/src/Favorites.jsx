@@ -8,7 +8,8 @@ const Favorites = () => {
 
   const [recipes, setRecipes] = useState([])
   const [savedRecipes, setSavedRecipes] = useState([])
-  const [cookies] = useCookies(["access_token"])
+  // eslint-disable-next-line no-unused-vars
+  const [cookies, _] = useCookies(["access_token"])
 
   const userID = useGetUserID()
 

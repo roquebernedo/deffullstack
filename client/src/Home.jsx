@@ -2,14 +2,16 @@ import "./Styles/Home.scss"
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import { useGetUserID } from './Hooks/useGetUserID'
-
+import { useCookies } from 'react-cookie'
 
 
 const Home = () => {
 
+
     const [recipes, setRecipes] = useState([])
-    const [ setSavedRecipes] = useState([])
-    
+    const [savedRecipes, setSavedRecipes] = useState([])
+    // eslint-disable-next-line no-unused-vars
+    const [cookies, _] = useCookies(["access_token"])
   
     const userID = useGetUserID()
   
@@ -35,22 +37,22 @@ const Home = () => {
   
       fetchRecipe()
       fetchSavedRecipe()
-    }, [userID, setSavedRecipes])
+    }, [userID])
   
     
   
-    // const saveRecipe = async (recipeID) => {
-    //   try{
-    //     const response = await axios.put("http://localhost:3001/recipes", { 
-    //       recipeID, userID}, 
-    //       { headers: { authorization : cookies.access_token}})
-    //     setSavedRecipes(response.data.savedRecipes)
-    //   }catch(err){
-    //     console.error(err)
-    //   }
-    // }
+    const saveRecipe = async (recipeID) => {
+      try{
+        const response = await axios.put("http://localhost:3001/recipes", { 
+          recipeID, userID}, 
+          { headers: { authorization : cookies.access_token}})
+        setSavedRecipes(response.data.savedRecipes)
+      }catch(err){
+        console.error(err)
+      }
+    }
   
-    // const isRecipeSaved = (id) => savedRecipes.includes(id) 
+    const isRecipeSaved = (id) => savedRecipes.includes(id) 
 
   return (
     <div className='main-home'>
@@ -94,7 +96,7 @@ const Home = () => {
         <h2 className='main-ideas'>Main Ideas</h2>
         <ul className='recipes-list'>
         {recipes.map((recipe) => (
-          <li key={recipe._id}>
+          <li key={recipe._id} className="li-recipe">
             <div className='recipes'>
                 <h2 className='name-recipe'>{recipe.name}</h2>
                 <img className='img-recipe' src={recipe.imageUrl} alt={recipe.name} />

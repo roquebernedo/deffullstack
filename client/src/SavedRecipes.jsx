@@ -36,7 +36,7 @@ const SavedRecipes = () => {
         <h2>Ideas Created</h2>
       
         <ul className='list'>
-          {savedRecipes.map((recipe, index) => (
+          {savedRecipes.map((recipe) => (
             <li key={recipe._id}>
               <div className='recipes'>
                 <h2 className='name-recipe'>{recipe.name}</h2>
