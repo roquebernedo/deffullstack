@@ -49,8 +49,10 @@ const Navbar = () => {
             </div>
         </div>
         <div className='nav-right'>
+          
             <Link className='Signup' to="/register">Sign Up</Link>
             <Link className='mail'><GoMail /></Link>
+           
         </div> 
     </div>
   )

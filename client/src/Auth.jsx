@@ -71,9 +71,9 @@ const Login = () => {
                     <h3 className='here'><Link to="/register">Sign Up Here</Link></h3>
                 </div>
                 <div className='or'>
-                    <div className='space'>______________________</div>
+                    <div className='space'></div>
                     <p className='or'>OR</p>
-                    <div className='space'>______________________</div>
+                    <div className='space'></div>
                 </div>
                 <button className='log google' ><FcGoogle className='icon-google'/>Sign in with Google</button>
                 <button className='log github'><BsGithub className='icon-google git'/>Sign in with Github</button>

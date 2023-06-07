@@ -51,9 +51,9 @@ const Register = () => {
                     <h3 className='here'><Link to="/auth">Sign In Here</Link></h3>
                 </div>
                 <div className='or'>
-                    <div className='space'>______________________</div>
+                    
                     <p className='or'>OR</p>
-                    <div className='space'>______________________</div>
+                    
                 </div>
                 <button className='log google' ><FcGoogle className='icon-google'/>Sign up with Google</button>
                 <button className='log github'><BsGithub className='icon-google git'/>Sign up with Github</button>

@@ -10,6 +10,20 @@
         margin-top: 30px;
         
         box-shadow: 1px 1px 2px 2px #afacac;
+        @media (max-width: 475px) {
+            padding: 10px 50px;
+               
+        }
+        @media (max-width: 425px) {
+            padding: 10px 30px;
+        }
+        @media (max-width: 375px) {
+            padding: 10px 30px;       
+               
+        }
+        @media (max-width: 320px) {
+            padding: 10px 2px;
+        }
 
         .sign{
             display: flex;
@@ -23,6 +37,9 @@
             
             label{
                 padding-bottom: 10px;
+                @media (max-width: 475px) {
+                    font-size: 20px;
+                }
             }
 
             input{
@@ -33,6 +50,12 @@
                 border: 1px solid rgb(173, 179, 179);
                 margin-bottom: 12px;
                 font-size: 14px;
+                @media (max-width: 475px) {
+                    width: 300px;
+                    height: 60px;
+                    font-size: 20px;
+                }
+                
             }
         }
 
@@ -42,6 +65,11 @@
             border-radius: 10px;
             border: 1px solid rgb(173, 179, 179);
             color: #474545;
+            @media (max-width: 475px) {
+                width: 300px;
+                height: 60px;
+                font-size: 18px;
+            }
         }
 
         .dont{
@@ -53,11 +81,17 @@
             p{
                 font-size: 13px;
                 color: rgb(7, 18, 48);
+                @media (max-width: 475px) {
+                    font-size: 14px;
+                }
             }
 
             .here{
                 font-size: 13px;
                 color: rgb(75, 75, 148);
+                @media (max-width: 475px) {
+                    font-size: 14px;
+                }
             }
         }
 
@@ -72,12 +106,19 @@
                 margin-right: 15px;
                 font-size: 13px;
                 color: rgb(139, 135, 135);
+                @media (max-width: 475px) {
+                    font-size: 14px;
+                    
+                }
             }
 
             .space{
                 padding-top: 6px;
                 height: 20px;
                 color: #afacac;
+                @media (max-width: 475px) {
+                    
+                }
             }
         }
 
@@ -91,6 +132,11 @@
             border: 1px solid rgb(173, 179, 179);
             padding-left: 95px;
             color: #474545;
+            @media (max-width: 475px) {
+                width: 300px;
+                height: 60px;
+                padding-left: 75px;
+            }
 
             .icon-google{
                 width: 35px;
