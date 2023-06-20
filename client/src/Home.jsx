@@ -13,7 +13,7 @@ const Home = () => {
     // eslint-disable-next-line no-unused-vars
     const [cookies, _] = useCookies(["access_token"])
     const userID = useGetUserID()
-
+    console.log(savedRecipes)
     useEffect(() => {
       const fetchRecipe = async () => {
         try{
