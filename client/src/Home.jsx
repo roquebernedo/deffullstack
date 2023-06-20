@@ -17,7 +17,7 @@ const Home = () => {
     useEffect(() => {
       const fetchRecipe = async () => {
         try{
-          const response = await axios.get("http://localhost:3001/recipes")
+          const response = await axios.get("https://react-recipe-afru.onrender.com/recipes")
           setRecipes(response.data)
         }catch(err){
           console.error(err)
@@ -26,7 +26,7 @@ const Home = () => {
   
       const fetchSavedRecipe = async () => {
         try{
-          const response = await axios.get(`http://localhost:3001/recipes/savedRecipes/ids/${userID}`)
+          const response = await axios.get(`https://react-recipe-afru.onrender.com/recipes/savedRecipes/ids/${userID}`)
           setSavedRecipes(response.data.savedRecipes)
           console.log(response.data)
         }catch(err){

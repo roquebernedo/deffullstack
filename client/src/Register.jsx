@@ -15,7 +15,7 @@ const Register = () => {
     event.preventDefault();
 
     try {
-        await axios.post("http://localhost:3001/auth/register", {username, password})
+        await axios.post("https://react-recipe-afru.onrender.com/auth/register", {username, password})
         alert("Registration completed")
     } catch (error) {
         console.error(error)

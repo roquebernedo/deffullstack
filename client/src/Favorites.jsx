@@ -16,7 +16,7 @@ const Favorites = () => {
   useEffect(() => {
     const fetchRecipe = async () => {
       try{
-        const response = await axios.get("http://localhost:3001/recipes")
+        const response = await axios.get("https://react-recipe-afru.onrender.com/recipes")
         setRecipes(response.data)
       }catch(err){
         console.error(err)
@@ -25,7 +25,7 @@ const Favorites = () => {
 
     const fetchSavedRecipe = async () => {
       try{
-        const response = await axios.get(`http://localhost:3001/recipes/savedRecipes/ids/${userID}`)
+        const response = await axios.get(`https://react-recipe-afru.onrender.com/recipes/savedRecipes/ids/${userID}`)
         setSavedRecipes(response.data.savedRecipes)
         console.log(response.data)
       }catch(err){
@@ -41,7 +41,7 @@ const Favorites = () => {
 
   const saveRecipe = async (recipeID) => {
     try{
-      const response = await axios.put("http://localhost:3001/recipes", { 
+      const response = await axios.put("https://react-recipe-afru.onrender.com/recipes", { 
         recipeID, userID}, 
         { headers: { authorization : cookies.access_token}})
       setSavedRecipes(response.data.savedRecipes)
