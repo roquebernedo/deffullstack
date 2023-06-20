@@ -12,10 +12,8 @@ const Home = () => {
     const [savedRecipes, setSavedRecipes] = useState([])
     // eslint-disable-next-line no-unused-vars
     const [cookies, _] = useCookies(["access_token"])
-  
     const userID = useGetUserID()
-    console.log(savedRecipes)
-    console.log(cookies)
+
     useEffect(() => {
       const fetchRecipe = async () => {
         try{
@@ -37,23 +35,13 @@ const Home = () => {
       }
   
       fetchRecipe()
-      fetchSavedRecipe()
-    }, [userID])
+
+      if(cookies.access_token) fetchSavedRecipe()
+  
+    }, [cookies.access_token, userID])
   
     
   
-    // const saveRecipe = async (recipeID) => {
-    //   try{
-    //     const response = await axios.put("http://localhost:3001/recipes", { 
-    //       recipeID, userID}, 
-    //       { headers: { authorization : cookies.access_token}})
-    //     setSavedRecipes(response.data.savedRecipes)
-    //   }catch(err){
-    //     console.error(err)
-    //   }
-    // }
-  
-    // const isRecipeSaved = (id) => savedRecipes.includes(id) 
 
   return (
     <div className='main-home'>

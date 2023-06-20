@@ -7,16 +7,13 @@ import { FcGoogle} from "react-icons/fc"
 import { BsGithub, BsFacebook } from "react-icons/bs"
 import { Link } from 'react-router-dom'
 
-
-
 const Auth = () => {
     return (
       <div className='auth'>
           <Login/>
-          
       </div>
     )
-  }
+}   
 
 const Login = () => {
 

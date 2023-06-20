@@ -17,8 +17,7 @@ const Layout = () => {
     </>
   )
 }
-console.log("Width: " + window.innerWidth);
-  console.log("Height: " + window.innerHeight);
+
 const router = createBrowserRouter([
   {
     path: "/about",
