@@ -6,7 +6,7 @@ import { UserModel } from "../models/Users.js"
 const router = express.Router()
 
 router.post("/register", async (req, res) => {
-    res.header( "Access-Control-Allow-Origin" );
+    res.header("Access-Control-Allow-Origin", "*")
     const { username, password} = req.body;
     const user = await UserModel.findOne({username})
 
@@ -23,7 +23,7 @@ router.post("/register", async (req, res) => {
 })
 
 router.post("/login", async (req, res) => {
-    res.header( "Access-Control-Allow-Origin" );
+    res.header("Access-Control-Allow-Origin", "*")
     const { username, password } = req.body;
     const user = await UserModel.findOne({username})
 
